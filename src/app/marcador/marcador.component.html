@@ -1,11 +1,13 @@
 <body>
   <div class="marcador">
     <div class="equipo equipo-local">
-      <h2 class="nombre-equipo">Equipo L</h2>
+      <h2 class="nombre-equipo">
+        <input type="text" [(ngModel)]="equipoLocal">
+      </h2>
       <span class="goles">0</span>
     </div>
     <div class="tiempo">
-      <select id="tiempo-eleccion">
+      <select [(ngModel)]="tiempoSeleccionado" (change)="onTiempoCambiado($event.target.value)">
         <option value="1">1 minuto</option>
         <option value="2">2 minutos</option>
         <option value="5">5 minutos</option>
@@ -14,7 +16,9 @@
       <span id="tiempo-actual">00:00</span>
     </div>
     <div class="equipo equipo-visitante">
-      <h2 class="nombre-equipo">Equipo V</h2>
+      <h2 class="nombre-equipo">
+        <input type="text" [(ngModel)]="equipoVisitante">
+      </h2>
       <span class="goles">0</span>
     </div>
   </div>
