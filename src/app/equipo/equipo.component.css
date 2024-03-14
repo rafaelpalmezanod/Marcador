@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+  }
+  
+  .equipo {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+
+  
+  .equipo span {
+    font-weight: bold;
+    color: black;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .equipo button {
+    padding: 10px 20px;
+    border: 1px solid #1d5468;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
